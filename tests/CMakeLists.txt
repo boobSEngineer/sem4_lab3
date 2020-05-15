@@ -7,6 +7,6 @@ set(CMAKE_CXX_FLAGS "-Wno-deprecated-declarations")
 add_subdirectory(google_tests)
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 
-add_executable(sem4lab3_tests tests.cpp)
+add_executable(sem4lab3_tests tests.cpp ../dijkstra.cpp ../graph.cpp)
 target_link_libraries(sem4lab3_tests gtest gtest_main)
 
