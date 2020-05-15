@@ -1,7 +1,7 @@
 #include <string.h>
 #include <fstream>
-#include "rb_map.h"
 #include "array.h"
+#include "list.h"
 
 #ifndef SEM4LAB3_GRAPH_H
 #define SEM4LAB3_GRAPH_H
