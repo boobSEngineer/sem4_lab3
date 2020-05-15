@@ -8,7 +8,7 @@ int main() {
 
     bool run = true;
     while (run) {
-        std::cout << "\n\n\nGraph:";
+        std::cout << "\n\n\nGraph:\n";
         graph.print();
         std::cout << "\n\ncommands: \n1 - find path\n2 - open file\nother - exit\n\ninput command: ";
 
@@ -43,8 +43,6 @@ int main() {
                 } else {
                     std::cout << "no path exists.\n";
                 }
-                std::cout << "press enter to continue...";
-                std::cin >> city;
                 break;
             }
             case 2: {
@@ -65,14 +63,5 @@ int main() {
         std::cout << "\n";
     }
 
-    graph.fromFile("../input.txt");
-    graph.print();
-//
-//    std::cout << "\n\n";
-//    auto path = DijkstraAlgorithm::find_path(g, *g.get_vertex("Moscow"), *g.get_vertex("Vladivostok"));
-//    std::cout << "path length: " << path.length() << "\n";
-//    for (int i = 0; i < path.length(); i++) {
-//        std::cout << " " << path[i]->city;
-//    }
     return 0;
 }
